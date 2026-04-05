@@ -157,3 +157,10 @@ websocket-client @ file:///home/conda/feedstock_root/build_artifacts/websocket-c
 Werkzeug @ file:///home/task_177249117597743/croot/werkzeug_1772491211257/work
 xgboost==3.2.0
 zipp @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_zipp_1764460141/work
+
+flask
+numpy
+torch
+tensorflow
+opencv-python
+Pillow
