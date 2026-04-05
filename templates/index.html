@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🌿 Crop Disease Detection</h1>
+    <p class="subtitle">Upload a leaf image to detect disease</p>
+
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <!-- Image Preview -->
+    <img id="preview" class="preview" style="display:none;">
+
+    <br>
+
+    <select id="language">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="predictDisease()">🔍 Predict</button>
+
+    <!-- Loading -->
+    <p id="loading" class="loading" style="display:none;">⏳ Analyzing image...</p>
+
+    <!-- Result -->
+    <div id="resultBox" class="result-box" style="display:none;">
+        <h3 id="disease"></h3>
+        <p id="description"></p>
+        <p id="solution"></p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
