@@ -1,7 +1,9 @@
-python-3.10.13
-flask
+Flask
+Flask-Cors
+gunicorn
 numpy
 torch
+torchvision
 tensorflow
 opencv-python
 Pillow
